@@ -4,12 +4,12 @@ import Navbar from "./components/Navbar";
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import { v4 as uuidv4 } from "uuid";
-
+// function
 function App() {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
   const [showFinished, setshowFinished] = useState(true);
-
+// useeffect
   useEffect(() => {
     let todoString = localStorage.getItem("todos");
     if (todoString) {
